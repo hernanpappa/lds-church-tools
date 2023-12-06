@@ -1,0 +1,27 @@
+.logo {
+    border: 2px solid black;
+    border-radius: 10%;
+    width: 100%;
+    /* O el ancho que desees para el contenedor */
+    height: 0;
+    /* Para crear un espacio para la imagen con respecto al ancho */
+    padding-bottom: 100%;
+    /* Relación de aspecto 1:1 (100% de padding-bottom) */
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* La imagen se recorta para llenar el contenedor manteniendo la relación de aspecto */
+    object-position: center center;
+    /* Centra la imagen en el contenedor */
+}
+
+@media screen and (max-width: 1000px) {
+    .logo-vercel {
+      display: none;
+    }
+  }
